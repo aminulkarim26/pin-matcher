@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input class="form-control" type="text">
+                    <input id="numbersArea" class="form-control" type="text">
                     <div class="numbers">
                         <div class="calc-body">
                             <div class="calc-button-row">
@@ -37,7 +37,7 @@
                               <div class="button">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button"><</div>
+                                <div class="button"> < </div>
                                 <div class="button">0</div>
                                 <div class="button">C</div>
                             </div>
@@ -55,40 +55,7 @@
         </div>
     </div>
 
-<script>
-   var displayPin= document.getElementById('display');
-    
-   const generateBtn = document.getElementById("generate");
-        generateBtn.addEventListener("click", function(){
-            var arr =[];
-            for(var i=0; i<4 ; i++){
-            var randomNum = Math.random () *9;
-            var generatePin = Math.round(randomNum);
-            arr.push(generatePin);
-
-            
-            displayPin.value = arr.join("");
-
-
-            
-            
-    
-
-         
-               
-                
-
-           
-            
-                
-        
-        }
-        
-    
-})
+<script src="script.js"></script>
   
-
-    
-</script>    
 </body>
 </html>
