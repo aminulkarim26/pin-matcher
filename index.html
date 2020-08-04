@@ -56,21 +56,35 @@
     </div>
 
 <script>
+   var displayPin= document.getElementById('display');
+    
    const generateBtn = document.getElementById("generate");
         generateBtn.addEventListener("click", function(){
+            var arr =[];
             for(var i=0; i<4 ; i++){
             var randomNum = Math.random () *9;
             var generatePin = Math.round(randomNum);
+            arr.push(generatePin);
 
-            console.log(generatePin); 
+            
+            displayPin.value = arr.join("");
 
+
+            
+            
+    
+
+         
+               
+                
 
            
             
                 
-                
+        
         }
-   
+        
+    
 })
   
 
